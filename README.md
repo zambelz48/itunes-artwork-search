@@ -19,4 +19,5 @@
 - Search iTunes artwork
 
 ### Screen Cast
-TBC
+https://github.com/user-attachments/assets/b923f838-522c-4b2a-9887-6d2723b7fa37
+
