@@ -17,8 +17,8 @@ const SearchModal: React.FC<SearchModalProps> = ({
       <button type="button" className="absolute top-4 right-4" onClick={() => onClose()}>
         <img src="/x.png" alt="close" width={14} height={14} />
       </button>
-      <div className="flex flex-col items-center w-full p-8 gap-8">
-        <label className="text-white text-2xl">Search</label>
+      <div className="flex flex-col items-center w-full md:max-w-lg p-8 gap-8">
+        <text className="text-white text-2xl">Search</text>
         <SearchComponent onSearch={onSearch} />
       </div>
     </div>

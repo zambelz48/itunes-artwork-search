@@ -10,7 +10,7 @@ const NavBar: React.FC<NavBarProps> = ({
   onSearch,
 }) => {
   return (
-    <nav className="absolute inset-x-0 top-0 bg-violet-500">
+    <nav className="relative w-full top-0 bg-violet-500">
       <div className="flex flex-row justify-between items-center h-14 px-4">
         <button type="button" onClick={() => onBackToHome()}>
           <img src="/menu.png" alt="user" width={14} height={14} />
