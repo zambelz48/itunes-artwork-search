@@ -13,7 +13,7 @@ export default function WebPage() {
   return (
     <Container className="items-center justify-center bg-gradient-to-r from-violet-600 to-purple-600">
       <Image src="/logo.png" alt="logo" width={75} height={85} />
-      <div className="absolute w-full inset-x-0 bottom-8 pl-8 pr-8">
+      <div className="absolute w-full md:max-w-lg bottom-8 pl-8 pr-8">
         <SearchComponent onSearch={handleSearch} />
       </div>
     </Container>

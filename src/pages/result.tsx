@@ -43,7 +43,7 @@ export async function getServerSideProps({ query }: Query) {
       props: {
         keyword: searchKeyword,
         items: [],
-        error: "Failed to fetch data",
+        error: "Content's not found",
       },
     }
   }
@@ -60,7 +60,7 @@ export default function WebPage({ keyword, items, error }: PageProps) {
           onBackToHome={() => router.push("/")}
           onSearch={() => setShowSearch(true)}
         />
-        <div className="flex flex-col w-full h-screen">
+        <div className="flex flex-col w-full">
           <p className="text-center my-10">
             <span className="text-sm text-gray-500">
               Search Result for :
