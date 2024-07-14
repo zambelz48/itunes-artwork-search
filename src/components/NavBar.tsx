@@ -15,7 +15,7 @@ const NavBar: React.FC<NavBarProps> = ({
         <button type="button" onClick={() => onBackToHome()}>
           <img src="/menu.png" alt="user" width={14} height={14} />
         </button>
-        <label className="text-white text-2xl">ngmusic</label>
+        <text className="text-white text-2xl">ngmusic</text>
         <button type="button" onClick={() => onSearch()}>
           <img src="/search.png" alt="user" width={14} height={14} />
         </button>
