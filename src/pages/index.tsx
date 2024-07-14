@@ -1,16 +1,21 @@
-import { Inter } from "next/font/google"
+import Image from "next/image"
+import { useRouter } from "next/router"
+import Container from "@/components/Container"
+import SearchComponent from "@/components/SearchComponent"
 
-const inter = Inter({ subsets: ["latin"] })
+export default function WebPage() {
+  const router = useRouter()
 
-export default function Home() {
+  const handleSearch = (search: string) => {
+    router.push(`/result?q=${search}`)
+  }
+
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="flex flex-col items-center">
-        <h1 className="text-4xl font-bold">Hello, World!</h1>
-        <p className="text-lg">Welcome to your Next.js site.</p>
+    <Container className="bg-gradient-to-r from-violet-600 to-purple-600">
+      <Image src="/logo.png" alt="logo" width={75} height={85} />
+      <div className="absolute w-full inset-x-0 bottom-8 pl-8 pr-8">
+        <SearchComponent onSearch={handleSearch} />
       </div>
-    </main>
+    </Container>
   )
 }
