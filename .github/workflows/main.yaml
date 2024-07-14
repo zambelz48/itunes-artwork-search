@@ -15,7 +15,7 @@ on:
 
 jobs:
   production-deployment:
-    name: Sample iTunes artwork search production deployment
+    name: Production Deployment
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     outputs:
@@ -48,7 +48,7 @@ jobs:
         run: echo "buildStatus=success" >> $GITHUB_OUTPUT
 
   staging-deployment:
-    name: Sample iTunes artwork search staging deployment
+    name: Staging Deployment
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/staging'
     outputs:
